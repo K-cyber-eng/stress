@@ -1,0 +1,197 @@
+/*HOME PAGE*/
+
+body{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.header {
+    color: #222222;
+    background-color: lightpink;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Bookman Old Style, serif;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightpink;
+    color: #222222;
+    font-family: Bookman Old Style, serif;
+    font-size: 15px;
+}
+nav li{
+    display: block;
+    border-right: 2px solid white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+nav a {
+    color: #222222;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+ section p{
+   color: black;
+    background-color: white;
+    padding: 10px;
+    font-family: Bookman Old Style, serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+}
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.footer {
+    background-color: lightpink;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: Bookman Old Style, serif;
+    font-size: 15px;
+}
+
+/*PROFESSIONAL PAGE*/
+.card{
+    font-family: Bookman Old Style, serif;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.card p{
+    font-size: 15px;
+}
+
+/*PERSONALITY PAGE*/
+
+.traits {
+    text-align: center;
+    padding: 30px;
+}
+
+.traits h2 {
+    color: #f1246f;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: tranform 0.5s ease;
+}
+.cards:hover {
+    transform: translateY(-5px)
+}
+
+.hero{
+    background-color: #fff0f5;
+    padding: 30px;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h1{
+    text-align: center;
+    color: #ec1e71;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-image img{
+    width: 200px;
+    border-radius: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-information h3 h4{
+    color: #f0297f;
+}
+/* Mobile screens */
+@media screen and (max-width: 800px) {
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 70%;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100px;
+    }
+
+    .personality-intro {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .personality-intro h1 {
+        font-size: 30px;
+    }
+
+    .personality-hero-information{
+        font-size: 30px;
+        
+    }
+}
+
+
